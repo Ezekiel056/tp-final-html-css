@@ -90,18 +90,27 @@ main {
   gap: 10px;
 }
 
+#btn-propose {
+  overflow: hidden;
+  & span:nth-child(2) {
+    display: none;
+  }
+}
+
 .menu-nav {
   display: none;
 }
 
 .page-footer {
-  border-top: 1px var(--outline) solid;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px 15px;
   background-color: var(--footer-bg-color);
   color: var(--text-color);
+}
+
+.page-footer-content {
+  padding: 20px 15px;
+  border-top: 1px var(--outline) solid;
+  display: grid;
+  gap: 15px;
 
   a {
     text-decoration: none;
@@ -126,8 +135,49 @@ main {
   .footer-about {
     margin-bottom: 25px;
   }
+}
+.footer-copyright {
+  padding: 0 15px;
+  font-size: 0.8rem;
+  hr {
+    margin-bottom: 15px;
+  }
+}
 
-  .footer-copyright {
+/* =================================
+SECTION : STYLE POUR TABLETTES
+================================= */
+@media (min-width: 768px) {
+  .page-footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =================================
+SECTION : STYLES POUR DESKTOP
+================================= */
+@media (min-width: 1024px) {
+  .menu-nav {
+    display: block;
+    color: var(--text-color);
     font-size: 0.8rem;
+    font-weight: 400;
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  #menu-btn {
+    display: none;
+  }
+  #btn-propose {
+    overflow: hidden;
+    & span:nth-child(1) {
+      display: none;
+    }
+    & span:nth-child(2) {
+      display: inline;
+    }
   }
 }

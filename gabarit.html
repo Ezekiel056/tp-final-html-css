@@ -27,38 +27,46 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="#" class="button">Proposer</a>
-        <div class="button secondary">Menu</div>
+        <a href="#" class="button" id="btn-propose">
+          <span aria-hidden="true">Proposer</span>
+          <span>Proposer une info</span>
+        </a>
+        <div class="button secondary" id="menu-btn">Menu</div>
       </div>
     </header>
     <main></main>
     <footer class="page-footer">
-      <div class="footer-about">
-        <p class="footer-title">CityPulse</p>
-        <p>
-          Le mini médial local qui met en avant les infos utiles, les
-          initiatives et l'agenda du territoire .
-        </p>
+      <div class="page-footer-content">
+        <div class="footer-about">
+          <p class="footer-title">CityPulse</p>
+          <p>
+            Le mini médial local qui met en avant les infos utiles, les
+            initiatives et l'agenda du territoire .
+          </p>
+        </div>
+        <nav>
+          <p class="footer-title">Rubriques</p>
+          <ul>
+            <li><a href="/accueil.html">Accueil</a></li>
+            <li><a href="/articles.html">Articles</a></li>
+            <li><a href="/agenda.html">Agenda</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="footer-title">Rédaction</p>
+          <ul>
+            <li><a href="#">Proposer une info</a></li>
+            <li><a href="#">Signaler une erreur</a></li>
+            <li><a href="#">Charte de publication</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <p class="footer-title">Rubriques</p>
-        <ul>
-          <li><a href="/accueil.html">Accueil</a></li>
-          <li><a href="/articles.html">Articles</a></li>
-          <li><a href="/agenda.html">Agenda</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <p class="footer-title">Rédaction</p>
-        <ul>
-          <li><a href="#">Proposer une info</a></li>
-          <li><a href="#">Signaler une erreur</a></li>
-          <li><a href="#">Charte de publication</a></li>
-        </ul>
-      </nav>
-      <hr />
-      <p class="footer-copyright">&copy; 2025 CityPulse -- UI Statique (TP HTML/CSS).</p>
+
+      <div class="footer-copyright">
+        <hr />
+        <p>&copy; 2025 CityPulse -- UI Statique (TP HTML/CSS).</p>
+      </div>
     </footer>
   </body>
 </html>
