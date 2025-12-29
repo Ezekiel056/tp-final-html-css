@@ -40,9 +40,9 @@
         </label>
       </div>
     </header>
-    <main class="main-accueil">
-      <article class="card card-wide">
-        <img src="img/placeholder-16x9.svg" alt="" />
+    <main id="main-accueil">
+      <article class="card card-wide" id="main-article">
+        <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
         <div class="card-content">
           <div class="tags">
             <div class="tag active-tag">Vie locale</div>
@@ -70,14 +70,159 @@
           </nav>
         </div>
       </article>
-      <section class="breaking-news"></section>
+
+      <section id="breaking-news">
+        <div class="breaking-news-headings">
+          <h2>À la une</h2>
+          <a href="/articles.html">Voir la liste</a>
+        </div>
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Économie</div>
+            </div>
+            <h2>
+              Commerces : les horaires spéciaux des fêtes et les services de
+              proximité
+            </h2>
+            <p>
+              Ouvertures, fermetures, permanances : un récapitulatif clair pour
+              organiser vos courses
+            </p>
+            <div class="article-subtitle">
+              <p>23 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>3 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Culture</div>
+            </div>
+            <h2>
+              Exposition : Une sélection d'oeuvres locals à découvrir en famille
+            </h2>
+            <p>
+              Un parcours accessible et chaleureux, avec des temps de médiation
+              et une visite courte.
+            </p>
+            <div class="article-subtitle">
+              <p>22 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>4 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Transports</div>
+            </div>
+            <h2>
+              Circulation : plan de stationnement et conseils pour éviter les
+              bouchons
+            </h2>
+            <p>
+              Les rues à privilégier, les zones à éviter, et des alternatives
+              simples pour se déplacer.
+            </p>
+            <div class="article-subtitle">
+              <p>21 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>2 min</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="last-news">
+        <div class="last-news-headings">
+          <h2>Dernières infos</h2>
+          <a href="/articles.html">tout afficher</a>
+        </div>
+        <article class="card-gray">
+          <p class="title">
+            Collecte : Modification exceptionnelle des tournées cette semaine
+          </p>
+          <p>24/12</p>
+        </article>
+
+        <article class="card-gray">
+          <p class="title">
+            Écoles : informations pratiques pour la reprise de janvier
+          </p>
+          <p>23/12</p>
+        </article>
+
+        <article class="card-gray">
+          <p class="title">
+            Solidarité : points de collect et besoins prioritaires
+          </p>
+          <p>22/12</p>
+        </article>
+
+        <article class="card-gray">
+          <p class="title">
+            Sport : Inscriptions ouvertes pour les ateliers de remise en forme
+          </p>
+          <p>20/12</p>
+        </article>
+      </section>
+
+      <aside class="aside">
+        <article class="card-gray">
+          <h2>Info du jour</h2>
+          <p>
+            <strong>Ouverture : </strong> permanance citoyenne exceptionnelle
+            vendredi matin
+          </p>
+          <p class="p-small">
+            Conseil : Privilégiez le contact via le formulaire si vous avez un
+            document à transmettre
+          </p>
+
+          <a href="/contact.html" class="button secondary"
+            >Contacter la rédaction</a
+          >
+        </article>
+        <article class="card-gray">
+          <h2>Météo & Circulation</h2>
+          <p>
+            <strong>Temps : </strong> Ciel couvert, rique de pluie en fin
+            d'après-midi.
+          </p>
+          <p>
+            <strong>Trafic : </strong> Circulation dense autour du centre entre
+            16h et 19h
+          </p>
+          <p class="p-small">
+            Ces informations sont indicatives (contenu statique du TP)
+          </p>
+        </article>
+
+        <article class="card-gray">
+          <h2>Recevoir la news leteter</h2>
+          <p>
+            Une fois par semaine : les infos utiles, l'agenda et les bonnes
+            initiatives.
+          </p>
+          <a href="#" class="button">Je m'inscris</a>
+        </article>
+      </aside>
     </main>
     <footer class="page-footer">
       <div class="page-footer-content">
         <div class="footer-about">
           <p class="footer-title">CityPulse</p>
           <p>
-            Le mini médial local qui met en avant les infos utiles, les
+            Le mini média local qui met en avant les infos utiles, les
             initiatives et l'agenda du territoire .
           </p>
         </div>
