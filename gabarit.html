@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>CityPulse - Accueil</title>
   </head>
   <body>
-    <header>
-      <a href="/accueil.html">
+    <header class="page-header">
+      <a class="header-logo" href="/accueil.html">
         <img src="/img/logo.svg" alt="Logo du site" />
         <p>CityPulse</p>
       </a>
-      <nav>
+      <nav class="menu-nav">
         <ul>
           <li>Accueil</li>
           <li>Articles</li>
@@ -20,20 +26,22 @@
           <li>Contact</li>
         </ul>
       </nav>
-      <a href="#" class="button">Proposer</a>
-      <div class="button secondary">Menu</div>
+      <div class="header-actions">
+        <a href="#" class="button">Proposer</a>
+        <div class="button secondary">Menu</div>
+      </div>
     </header>
     <main></main>
-    <footer>
-      <div>
-        <p>CityPulse</p>
+    <footer class="page-footer">
+      <div class="footer-about">
+        <p class="footer-title">CityPulse</p>
         <p>
           Le mini médial local qui met en avant les infos utiles, les
           initiatives et l'agenda du territoire .
         </p>
       </div>
       <nav>
-        <p>Rubriques</p>
+        <p class="footer-title">Rubriques</p>
         <ul>
           <li><a href="/accueil.html">Accueil</a></li>
           <li><a href="/articles.html">Articles</a></li>
@@ -42,13 +50,15 @@
         </ul>
       </nav>
       <nav>
-        <p>Rédaction</p>
+        <p class="footer-title">Rédaction</p>
         <ul>
           <li><a href="#">Proposer une info</a></li>
           <li><a href="#">Signaler une erreur</a></li>
           <li><a href="#">Charte de publication</a></li>
         </ul>
       </nav>
+      <hr />
+      <p class="footer-copyright">&copy; 2025 CityPulse -- UI Statique (TP HTML/CSS).</p>
     </footer>
   </body>
 </html>
