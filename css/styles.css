@@ -118,12 +118,23 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    margin-top: 100px;
+    margin-top: 20px;
     gap: 20px;
     a {
       font-size: 1.5rem;
       color: white;
     }
+  }
+}
+#btn-close-menu-nav {
+  margin-bottom: 20px;
+  label {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
   }
 }
 
@@ -191,6 +202,10 @@ SECTION : STYLES POUR DESKTOP
 @media (min-width: 1024px) {
   :root {
     font-size: 14px;
+  }
+
+  #btn-close-menu-nav {
+    display: none;
   }
 
   .menu-nav {
