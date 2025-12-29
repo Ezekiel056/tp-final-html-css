@@ -157,10 +157,14 @@ SECTION : STYLE POUR TABLETTES
 SECTION : STYLES POUR DESKTOP
 ================================= */
 @media (min-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+
   .menu-nav {
     display: block;
     color: var(--text-color);
-    font-size: 0.8rem;
+    font-size: 1cm;
     font-weight: 400;
     ul {
       display: flex;
