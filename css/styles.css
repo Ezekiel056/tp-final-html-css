@@ -13,6 +13,8 @@
   --header-bg-color: #f9f9fb;
   --footer-bg-color: #fafafc;
 
+  --card-bg-color: #fff;
+
   --outline: rgb(234, 234, 234);
   --btn-primary-bg-color: #1f6fec;
   --btn-primary-color: #fff;
@@ -24,6 +26,15 @@
 
   --tag-primary-bg-color: #e7eeff;
   --tag-secondary-bg-color: #fafbfd;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-color);
 }
 
 a {
@@ -45,11 +56,70 @@ hr {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--body-bg-color);
 }
 
 main {
   margin: 20px;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  .col {
+    flex-direction: column;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--card-bg-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 10px;
+  img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .article-subtitle {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+    margin: 10px 0px;
+  }
+
+  .card-content {
+    padding: 15px;
+    .tags {
+      display: flex;
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+  }
+  .article-buttons {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
+.tag {
+  background-color: var(--tag-secondary-bg-color);
+  border: 1px var(--outline) solid;
+  padding: 8px 12px;
+  border-radius: 20px;
+  &.active-tag {
+    background-color: var(--tag-primary-bg-color);
+    border: 1px #c6cbd9 solid;
+  }
 }
 
 .button {
@@ -89,6 +159,9 @@ main {
     gap: 10px;
     img {
       width: 50px;
+    }
+    p {
+      color: var(--title-text-color);
     }
   }
 }
@@ -195,6 +268,18 @@ SECTION : STYLE POUR TABLETTES
   .page-footer-content {
     grid-template-columns: repeat(3, 1fr);
   }
+  .card-wide {
+    flex-direction: row;
+    .card-content {
+      width: 70%;
+    }
+    .article-subtitle {
+      flex-wrap: wrap;
+    }
+    .article-buttons {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 /* =================================
@@ -203,6 +288,15 @@ SECTION : STYLES POUR DESKTOP
 @media (min-width: 1024px) {
   :root {
     font-size: 14px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .page-header,
+  .page-footer-content,
+  .footer-copyright,
+  main {
+    padding: 15px 20%;
   }
 
   #btn-close-menu-nav {
