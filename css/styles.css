@@ -54,7 +54,7 @@ main {
 
 .button {
   border-radius: 25px;
-  padding: 15px;
+  padding: 10px 15px;
   background-color: var(--btn-primary-bg-color);
   color: #fff;
   text-decoration: none;
@@ -69,6 +69,9 @@ main {
 }
 
 .page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
   background-color: var(--header-bg-color);
   display: flex;
   justify-content: space-between;
@@ -104,6 +107,34 @@ main {
 
 .menu-nav {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 100px;
+    gap: 20px;
+    a {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+}
+
+#menu-btn-switch {
+  &:checked ~ .menu-nav {
+    display: block;
+  }
+}
+
+main {
+  margin-top: 100px;
 }
 
 .page-footer {
@@ -163,16 +194,28 @@ SECTION : STYLES POUR DESKTOP
   }
 
   .menu-nav {
-    display: block;
-    color: var(--text-color);
+    display: inline-block;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    position: static;
+    min-height: 0;
+
     font-size: 1rem;
     font-weight: 400;
+    width: auto;
     ul {
+      margin: 0;
       display: flex;
       flex-direction: row;
       gap: 20px;
+      a {
+        color: var(--text-color);
+        font-size: 1rem;
+      }
     }
   }
+
   #menu-btn {
     display: none;
   }
