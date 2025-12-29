@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CityPulse - Accueil</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="header-logo" href="/accueil.html">
+        <img src="/img/logo.svg" alt="Logo du site" />
+        <p>CityPulse</p>
+      </a>
+      <input type="checkbox" hidden aria-hidden="true" id="menu-btn-switch" />
+      <nav class="menu-nav">
+        <ul>
+          <li id="btn-close-menu-nav">
+            <label for="menu-btn-switch">x</label>
+          </li>
+          <li><a href="/accueil.html">Accueil</a></li>
+          <li><a href="/articles.html" class="tag active-tag">Articles</a></li>
+          <li><a href="/agenda.html">Agenda</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="button" id="btn-propose">
+          <span aria-hidden="true">Proposer</span>
+          <span>Proposer une info</span>
+        </a>
+        <label for="menu-btn-switch">
+          <div class="button secondary" id="menu-btn">Menu</div>
+        </label>
+      </div>
+    </header>
+    <main id="main-articles">
+      <h1>Articles</h1>
+      <p>
+        Retrouvez-les dernières infos, classées par thématique. les filtres sont
+        présentés à titre visuel (TP sans JavaScript)
+      </p>
+      <section id="articles-search" class="card">
+        <form action="" class="card-content flex col">
+          <label for="articles-search">Rechercher</label>
+          <input type="text" placeholder="Ex. mobilité, culture, écoles ..." />
+          <p class="">
+            La recherche n'est pas fonctionnelle (présentation uniquement)
+          </p>
+
+          <label for="articles-order">trier</label>
+          <select name="articles-order" id="articles-order">
+            <option value="1">Les plus récents</option>
+            <option value="2">Les plus lus</option>
+            <option value="3">temps de lecture (court)</option>
+          </select>
+          <ul class="articles-search-themes">
+            <li class="tag active-tag">Vie locale</li>
+            <li class="tag">Culture</li>
+            <li class="tag">Économie</li>
+            <li class="tag">Éducation</li>
+            <li class="tag">Transports</li>
+            <li class="tag">Sport</li>
+          </ul>
+        </form>
+      </section>
+
+      <section id="articles-articleslist">
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Vie locale</div>
+            </div>
+            <h2>
+              budget participatif : les 5 projets retenus et le calendrier
+            </h2>
+            <p>
+              récapitulatif des projets financés en 2026 et des prochaines
+              étapes.
+            </p>
+            <div class="article-subtitle">
+              <p>25 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Culture</div>
+            </div>
+            <h2>
+              Exposition : Une sélection d'oeuvres locals à découvrir en famille
+            </h2>
+            <p>
+              Un parcours accessible et chaleureux, avec des temps de médiation
+              et une visite courte.
+            </p>
+            <div class="article-subtitle">
+              <p>22 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Économie</div>
+            </div>
+            <h2>
+              Commerces : les horaires spéciaux des fêtes et les services de
+              proximité
+            </h2>
+            <p>
+              Ouvertures, fermetures, permanances : un récapitulatif clair pour
+              organiser vos courses
+            </p>
+            <div class="article-subtitle">
+              <p>23 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Éducation</div>
+            </div>
+            <h2>Écoles : informations pratiques pour la reprise</h2>
+            <p>
+              Transport scolaire, cantine, inscriptions : ce qu'il faut retenir.
+            </p>
+            <div class="article-subtitle">
+              <p>23 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Transports</div>
+            </div>
+            <h2>
+              Circulation : plan de stationnement et conseils pour éviter les
+              bouchons
+            </h2>
+            <p>
+              Les rues à privilégier, les zones à éviter, et des alternatives
+              simples pour se déplacer.
+            </p>
+            <div class="article-subtitle">
+              <p>21 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Sport</div>
+            </div>
+            <h2>Ateliers forme: inscriptions ouvertes pour janvier</h2>
+            <p>
+              Un programme progressif, accessible et convivial pour reprendre en
+              douceur.
+            </p>
+            <div class="article-subtitle">
+              <p>20 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Vie sociale</div>
+            </div>
+            <h2>Solidarité : besoins prioritaires et points de collecte.</h2>
+            <p>
+              Comment aider efficacement, où déposer et quelles priorités cette
+              semaine.
+            </p>
+            <div class="article-subtitle">
+              <p>22 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Culture</div>
+            </div>
+            <h2>Lecture publique : une soirée contes pour tous</h2>
+            <p>
+              Ambiance chaleureuse et sélection d'histoires locales et
+              contemporaines.
+            </p>
+            <div class="article-subtitle">
+              <p>19 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
+          <div class="card-content">
+            <div class="tags">
+              <div class="tag active-tag">Économie</div>
+            </div>
+            <h2>Marché : Producteurs, horaires et idées de panier</h2>
+            <p>
+              Produits de saison, idées recettes et bon plans pour consommer
+              local.
+            </p>
+            <div class="article-subtitle">
+              <p>18 décembre 2025</p>
+              <p>&FilledVerySmallSquare;</p>
+              <p>Lecture : 3-5 min</p>
+            </div>
+          </div>
+        </article>
+        <div class="articles-pagination">
+          <button class="button secondary">Préc.</button>
+          <button class="button secondary active">1</button>
+          <button class="button secondary">2</button>
+          <button class="button secondary">3</button>
+          <button class="button secondary">Suiv.</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-content">
+        <div class="footer-about">
+          <p class="footer-title">CityPulse</p>
+          <p>
+            Le mini médial local qui met en avant les infos utiles, les
+            initiatives et l'agenda du territoire .
+          </p>
+        </div>
+        <nav>
+          <p class="footer-title">Rubriques</p>
+          <ul>
+            <li><a href="/accueil.html">Accueil</a></li>
+            <li><a href="/articles.html">Articles</a></li>
+            <li><a href="/agenda.html">Agenda</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="footer-title">Rédaction</p>
+          <ul>
+            <li><a href="#">Proposer une info</a></li>
+            <li><a href="#">Signaler une erreur</a></li>
+            <li><a href="#">Charte de publication</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <hr />
+        <p>&copy; 2025 CityPulse -- UI Statique (TP HTML/CSS).</p>
+      </div>
+    </footer>
+  </body>
+</html>
