@@ -25,7 +25,7 @@
             <label for="menu-btn-switch">x</label>
           </li>
           <li><a href="/accueil.html">Accueil</a></li>
-          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/articles.html" class="tag active-tag">Articles</a></li>
           <li><a href="/agenda.html">Agenda</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -40,6 +40,8 @@
         </label>
       </div>
     </header>
+
+    <!-- main de la page -->
     <main id="page-article-main">
       <!-- Fil d'ariane -->
       <nav class="breadcrumb">
@@ -49,179 +51,184 @@
           <li>Budget participatif</li>
         </ul>
       </nav>
-
-      <!-- Liste des tags -->
-      <div class="tags">
-        <div>Vie locale</div>
-        <div>Dossier</div>
-      </div>
-
-      <h1>
-        budget participatif : 5 projets concerts retenus pour améliorer le
-        quotidien
-      </h1>
-
-      <!-- info auteur, temps de lecture etc..  -->
-      <div class="subtitle">
-        <p>24 décembre</p>
-        <p>&FilledVerySmallSquare;</p>
-        <p>Par Rédaction CityPulse</p>
-        <p>&FilledVerySmallSquare;</p>
-        <p>Lecture : 6 min</p>
-      </div>
-
-      <!-- Image d'illiusatration de l'article -->
-      <figure class="card">
-        <img src="/img/placeholder-16x9.svg" alt="" />
-        <caption>
-          Illustration de démonstration (TP) -- Remplacez par une photo locale
-          si nécéssaire
-        </caption>
-      </figure>
-
-      <!-- Contenu de l'article -->
-      <article class="article-container">
-        <p>
-          En 2025, la commune a expérimenté une nouvelle façon d'impliquer les
-          habitants dans les choix du quotidien : un. Budget participatif,
-          simple, transparent et orienté vers des actions concrètes. Résultats :
-          plusieurs dizaines de propositions déposées, des échanges nourris,
-          puis un vote public pour partager des idées.
-        </p>
-        <p>
-          Cette première édition à surtout montré une chose : quand on clarifie
-          les règles, et qu'on explique le calendrier, les habitants se
-          saisissent du dispositif. Les projets retenus sont variés, mais ils
-          ont un point commun : améliorer des usages, très concrets, rapidement,
-          visibles, avec des coûts maîtrisé.
-        </p>
-        <h2>Les projets retenus</h2>
-        <ul>
-          <li>
-            <p>
-              <strong> cheminements piétons sécurisés:</strong> amélioration de
-              la lisibilité, marquages et zones de vigilance
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Îlots de fraîcheur :</strong> plantations d'essences
-              adaptées, ombrage et bancs supplémentaires
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <strong>Équipements sportifs de proximité :</strong> agrÈs légerS,
-              parcours santé, signalétique
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <strong>Valorisation du patrimoine :</strong>restauration de
-              petits éléments et panneaux explicatifs
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <strong>Coin lecture intergénérationnel :</strong> mobilier,
-              étagères, espace calme et accessible.
-            </p>
-          </li>
-        </ul>
-        <div class="quote">
-          <p>
-            "L'idée n'est pas de multiplier les grands projets, mais de rendre
-            la ville plus pratique, plus agréable, plus inclusive -- et de le
-            faire ensemble."
-          </p>
+      <section class="article-content">
+        <!-- Liste des tags -->
+        <div class="tags">
+          <div class="tag active-tag">Vie locale</div>
+          <div class="tag">Dossier</div>
         </div>
-        <h2>Comment ça va se dérouler en 2026</h2>
-        <p>
-          Le calendrier est annoncé, volontairement simple : une phase de
-          préparation (études et consultations), puis une phase de réalisation
-          par l'eau. Les premiers chantiers, ceux qui demandent moins d'études,
-          démarrent en début d'année. Les projets plus sensibles, notamment ceux
-          qui touchent à la circulation ou au patrimoine, seront planifiés pour
-          éviter les périodes de fortes fréquentations.
-        </p>
-        <h3>Trois principes de mise en œuvre</h3>
-        <ul>
-          <li>
-            <p>
-              <strong>Transparence : </strong> un point d'avancement régulier et
-              une liste claire des étapes.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              <strong>Sobriété :</strong> des solutions robustes, faciles à
-              entretenir, compatibles avec les contraintes locales.
-            </p>
-          </li>
+        <h1>
+          budget participatif : 5 projets concerts retenus pour améliorer le
+          quotidien
+        </h1>
 
-          <li>
-            <p>
-              <strong>Accessibilité :</strong> prise en compte des usages de
-              tous les publics, y compris en situation de handicap.
-            </p>
-          </li>
-        </ul>
-        <h2>Et ensuite ?</h2>
-        <p>
-          Une seconde édition est envisagée, avec un retour d'expérience pour
-          simplifier encore la participation. L'objectif est d'augmenter le
-          nombre de propositions structuré et d'aider les porteurs de projets à
-          préciser leurs besoins dès le départ (remplacement, budget, entretien,
-          publics concernés).
-        </p>
-        <p>
-          En attendant, vous pouvez consulter l'agenda des prochains échanges
-          citoyens et proposer une information locale à la rédaction de
-          CityPulse.
-        </p>
-      </article>
+        <!-- info auteur, temps de lecture etc..  -->
+        <div class="subtitle">
+          <p>24 décembre</p>
+          <p>&FilledVerySmallSquare;</p>
+          <p>Par Rédaction CityPulse</p>
+          <p>&FilledVerySmallSquare;</p>
+          <p>Lecture : 6 min</p>
+        </div>
 
-      <aside class="aside-articles" aria-label="Articles connexes">
+        <!-- Image d'illiusatration de l'article -->
+        <figure class="card">
+          <img src="/img/placeholder-16x9.svg" alt="" />
+          <figcaption>
+            <p>
+              Illustration de démonstration (TP) -- Remplacez par une photo
+              locale si nécéssaire
+            </p>
+          </figcaption>
+        </figure>
+
+        <!-- Contenu de l'article -->
+        <article class="card article-container">
+          <p>
+            En 2025, la commune a expérimenté une nouvelle façon d'impliquer les
+            habitants dans les choix du quotidien : un. Budget participatif,
+            simple, transparent et orienté vers des actions concrètes. Résultats
+            : plusieurs dizaines de propositions déposées, des échanges nourris,
+            puis un vote public pour partager des idées.
+          </p>
+          <p>
+            Cette première édition à surtout montré une chose : quand on
+            clarifie les règles, et qu'on explique le calendrier, les habitants
+            se saisissent du dispositif. Les projets retenus sont variés, mais
+            ils ont un point commun : améliorer des usages, très concrets,
+            rapidement, visibles, avec des coûts maîtrisé.
+          </p>
+          <h2>Les 5 projets retenus</h2>
+          <ul>
+            <li>
+              <p>
+                <strong> cheminements piétons sécurisés:</strong> amélioration
+                de la lisibilité, marquages et zones de vigilance
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Îlots de fraîcheur :</strong> plantations d'essences
+                adaptées, ombrage et bancs supplémentaires
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <strong>Équipements sportifs de proximité :</strong> agrÈs
+                légerS, parcours santé, signalétique
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <strong>Valorisation du patrimoine :</strong>restauration de
+                petits éléments et panneaux explicatifs
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <strong>Coin lecture intergénérationnel :</strong> mobilier,
+                étagères, espace calme et accessible.
+              </p>
+            </li>
+          </ul>
+          <div class="quote">
+            <p>
+              &laquo; L'idée n'est pas de multiplier les grands projets, mais de
+              rendre la ville plus pratique, plus agréable, plus inclusive -- et
+              de le faire ensemble. &raquo;
+            </p>
+          </div>
+          <h2>Comment ça va se dérouler en 2026</h2>
+          <p>
+            Le calendrier est annoncé, volontairement simple : une phase de
+            préparation (études et consultations), puis une phase de réalisation
+            par l'eau. Les premiers chantiers, ceux qui demandent moins
+            d'études, démarrent en début d'année. Les projets plus sensibles,
+            notamment ceux qui touchent à la circulation ou au patrimoine,
+            seront planifiés pour éviter les périodes de fortes fréquentations.
+          </p>
+          <h3>Trois principes de mise en œuvre</h3>
+          <ul>
+            <li>
+              <p>
+                <strong>Transparence : </strong> un point d'avancement régulier
+                et une liste claire des étapes.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <strong>Sobriété :</strong> des solutions robustes, faciles à
+                entretenir, compatibles avec les contraintes locales.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <strong>Accessibilité :</strong> prise en compte des usages de
+                tous les publics, y compris en situation de handicap.
+              </p>
+            </li>
+          </ul>
+          <h2>Et ensuite ?</h2>
+          <p>
+            Une seconde édition est envisagée, avec un retour d'expérience pour
+            simplifier encore la participation. L'objectif est d'augmenter le
+            nombre de propositions structuré et d'aider les porteurs de projets
+            à préciser leurs besoins dès le départ (remplacement, budget,
+            entretien, publics concernés).
+          </p>
+          <p>
+            En attendant, vous pouvez consulter l'agenda des prochains échanges
+            citoyens et proposer une information locale à la rédaction de
+            CityPulse.
+          </p>
+        </article>
+      </section>
+
+      <aside class="aside-articles card" aria-label="Articles connexes">
         <h2>A lire aussi</h2>
         <article class="card-gray">
           <p class="title">Stationnement : Ce qui change en 2026</p>
           <p>19/12</p>
         </article>
         <article class="card-gray">
-          <p class="title">Agenda : Les rendez-vous familiaux</p>
-          <p>17/12</p>
+          <p class="title">
+            Circulation; conseils pour éviter les axes chargés
+          </p>
+          <p>21/12</p>
         </article>
         <article class="card-gray">
-          <p class="title">Commerces : Services de proximité</p>
+          <p class="title">
+            Soidarité : points de collecte et besoins prioritaires
+          </p>
           <p>14/12</p>
         </article>
       </aside>
 
-      <aside class="share" aria-label="Partager l'article">
-        <p>Partager:</p>
-        <ul>
-          <li><a href="#">Email</a></li>
-          <li><a href="#">Réseau</a></li>
-          <li><a href="#">Lien</a></li>
-        </ul>
-        <p>boutons non fonctionnels (présentation uniquement).</p>
+      <aside class="share card-gray" aria-label="Partager l'article">
+        <p class="title">Partager:</p>
+        <a href="#" class="tag">Email</a>
+        <a href="#" class="tag">Réseau</a>
+        <a href="#" class="tag">Lien</a>
+        <p>Boutons non fonctionnels (présentation uniquement).</p>
       </aside>
 
       <!-- Informations sur l'article en cours -->
       <aside class="article-infos">
-        <section>
+        <section class="resume card-gray">
           <h2>Resumé</h2>
           <p>
-            cinq. Projets retenus, mise en œuvre par lots en 2026, priorité à
+            5 Projets retenus, mise en œuvre par lots en 2026, priorité à
             l'utilité et à l'accessibilité.
           </p>
         </section>
 
-        <section>
+        <section class="author card-gray">
           <h2>Auteur</h2>
           <p><strong>Rédaction CityPulse</strong></p>
           <p>
@@ -231,10 +238,10 @@
           <a href="#" class="button">Proposer une info</a>
         </section>
 
-        <section>
+        <section class="newsletter card-gray">
           <h2>Newsletter</h2>
-          <p>une sélection hebdo des infos utiles et de l'agenda</p>
-          <a href="#" class="button">Je m'inscrit</a>
+          <p>Une sélection hebdo des infos utiles et de l'agenda</p>
+          <a href="#" class="button secondary">Je m'inscris</a>
         </section>
       </aside>
     </main>
