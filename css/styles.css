@@ -970,7 +970,7 @@ SECTION : CONTACT
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
     .card {
       display: flex;
       flex-direction: column;
@@ -990,6 +990,63 @@ SECTION : CONTACT
     .tag {
       align-self: start;
       font-size: 0.8rem;
+    }
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  nav.pagination {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      & .active {
+        background-color: var(--active-pagination-bgc);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .events {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .card,
+    .card-gray {
+      padding: 25px;
+    }
+    form {
+      > div {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+
+    > h1,
+    p,
+    form {
+      grid-column: span 4;
+    }
+
+    .events {
+      grid-column: span 3;
+    }
+
+    .pagination {
+      grid-column: span 4;
     }
   }
 }
