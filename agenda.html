@@ -53,12 +53,23 @@
         <div class="inputs">
           <div aria-label="sélectionner la période de recherche">
             <label for="period">Période</label>
-            <select name="period" id="period"></select>
+            <select name="period" id="period">
+              <option value="1">Cette semaine</option>
+              <option value="2">Ce mois-ci</option>
+              <option value="3">Choisir une date</option>
+            </select>
           </div>
 
           <div aria-label="Sélectionner le type d'événement">
             <label for="event-type">Type d'événement</label>
-            <select name="event-type" id="event-type"></select>
+            <select name="event-type" id="event-type">
+              <option value="0">Tous</option>
+              <option value="1">Concert</option>
+              <option value="2">Marché</option>
+              <option value="3">Exposition</option>
+              <option value="4">Atelier</option>
+              <option value="5">Sport</option>
+            </select>
           </div>
         </div>
 
