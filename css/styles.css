@@ -90,7 +90,9 @@ h3 {
 }
 
 label {
-  color: var(--title-text-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--label-text-color);
 }
 
 h1 {
@@ -877,11 +879,7 @@ SECTION : CONTACT
     p {
       font-size: 0.9rem;
     }
-    label {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--label-text-color);
-    }
+
     .checkbox-container {
       display: flex;
       gap: 10px;
@@ -943,6 +941,55 @@ SECTION : CONTACT
     }
     form {
       grid-column: span 3;
+    }
+  }
+}
+
+#page-agenda-main {
+  h1 {
+    margin-bottom: 5px;
+  }
+  display: grid;
+  gap: 15px;
+
+  form {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    p {
+      font-size: 0.8rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  .events {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+
+      h2 {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      .subtitle {
+        display: flex;
+        gap: 10px;
+        font-size: 0.8rem;
+      }
+    }
+    .tag {
+      align-self: start;
+      font-size: 0.8rem;
     }
   }
 }
