@@ -677,3 +677,12 @@ SECTION : Page articles
     }
   }
 }
+
+/* =================================
+SECTION : Page article
+================================= */
+
+#page-article-main {
+  display: grid;
+  gap: 15px;
+}
