@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CityPulse - Accueil</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="header-logo" href="/accueil.html">
+        <img src="/img/logo.svg" alt="Logo du site" />
+        <p>CityPulse</p>
+      </a>
+      <input type="checkbox" hidden aria-hidden="true" id="menu-btn-switch" />
+      <nav class="menu-nav">
+        <ul>
+          <li id="btn-close-menu-nav">
+            <label for="menu-btn-switch">x</label>
+          </li>
+          <li><a href="/accueil.html">Accueil</a></li>
+          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/agenda.html">Agenda</a></li>
+          <li><a href="/contact.html" class="tag active-tag">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="button" id="btn-propose">
+          <span aria-hidden="true">Proposer</span>
+          <span>Proposer une info</span>
+        </a>
+        <label for="menu-btn-switch">
+          <div class="button secondary" id="menu-btn">Menu</div>
+        </label>
+      </div>
+    </header>
+
+    <!-- page de contact -->
+    <main id="page-contact-main">
+      <h1>Contact / proposer une info</h1>
+      <p class="subtitle">
+        Vous avez une information locale, un évènement ou une correction à
+        signaler ? Envoyez-nous un message. Les champs marqués "obligatoires"
+        doivent être renseignés.
+      </p>
+      <form action="" class="card">
+        <label for="name">Nom (facultatif)</label>
+        <input type="text" id="name" name="name" />
+        <p>Indiquez le nom que nous pouvons citer si vous le souhaitez</p>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <p>Nous l'utilisons uniquement pour vous répondre.</p>
+        <label for="message-type">Type de message (obligatoire)</label>
+        <select name="message-type" id="message-type" required>
+          <option value="0">Choisir...</option>
+          <option value="1">Proposer un article</option>
+          <option value="2">Proposer un évèvement</option>
+          <option value="3">Signler une erreur</option>
+          <option value="4">Autre</option>
+        </select>
+
+        <label for="message-text">Message (obligatoire)</label>
+        <textarea
+          name="message-text"
+          id="message-text"
+          rows="8"
+          placeholder="Décrivez l'information : qui ? quoi ? où ? quand ? comment ?"
+          required
+        ></textarea>
+        <p>Plus c'est précis, plus c'est simple à vérifier et à publier.</p>
+        <label class="checkbox-container">
+          <input type="checkbox" required />
+          J'accepte la collecte de mes données personnelles afin d' être
+          recontacté au sujet de ce message (obligatoire)
+        </label>
+        <button type="submit" class="button">Envoyer</button>
+        <p>Envoi non fonctionnel (TP sans back-end)</p>
+      </form>
+
+      <aside class="aside">
+        <section class="redaction-coordinates card-gray">
+          <h2>Coordonées de la rédaction</h2>
+          <address>
+            <strong>CityPulse</strong><br />
+            Rédaction locale -- Réponse sous 48heures ouvrés <br />
+            Adresse : 12, rue des Éditions, 89000 Maville <br />
+            Horaires : lun-ven, 9h-12h / 14h-17h
+          </address>
+        </section>
+        <section class="before-send card-gray">
+          <h2>Avant d'envoyer</h2>
+          <ul>
+            <li>Donnez une date et un lieu précis</li>
+            <li>Ajouter un contact si nécéssaire</li>
+            <li>Indiquez si la publication est urgente</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-content">
+        <div class="footer-about">
+          <p class="footer-title">CityPulse</p>
+          <p>
+            Le mini médial local qui met en avant les infos utiles, les
+            initiatives et l'agenda du territoire .
+          </p>
+        </div>
+        <nav>
+          <p class="footer-title">Rubriques</p>
+          <ul>
+            <li><a href="/accueil.html">Accueil</a></li>
+            <li><a href="/articles.html">Articles</a></li>
+            <li><a href="/agenda.html">Agenda</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="footer-title">Rédaction</p>
+          <ul>
+            <li><a href="#">Proposer une info</a></li>
+            <li><a href="#">Signaler une erreur</a></li>
+            <li><a href="#">Charte de publication</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <hr />
+        <p>&copy; 2025 CityPulse -- UI Statique (TP HTML/CSS).</p>
+      </div>
+    </footer>
+  </body>
+</html>
