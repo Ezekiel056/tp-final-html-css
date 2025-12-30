@@ -46,219 +46,282 @@
         Retrouvez-les dernières infos, classées par thématique. les filtres sont
         présentés à titre visuel (TP sans JavaScript)
       </p>
-      <section id="articles-search" class="card">
-        <form action="" class="card-content flex col">
-          <label for="articles-search">Rechercher</label>
-          <input type="text" placeholder="Ex. mobilité, culture, écoles ..." />
-          <p class="">
-            La recherche n'est pas fonctionnelle (présentation uniquement)
-          </p>
+      <div id="articles-content">
+        <section id="articles-search" class="card">
+          <form action="" class="card-content">
+            <div class="searchbox">
+              <label for="articles-search">Rechercher</label>
+              <input
+                type="text"
+                placeholder="Ex. mobilité, culture, écoles ..."
+                id="articles-search"
+              />
+              <p class="">
+                La recherche n'est pas fonctionnelle (présentation uniquement)
+              </p>
+            </div>
 
-          <label for="articles-order">trier</label>
-          <select name="articles-order" id="articles-order">
-            <option value="1">Les plus récents</option>
-            <option value="2">Les plus lus</option>
-            <option value="3">temps de lecture (court)</option>
-          </select>
-          <ul class="articles-search-themes">
-            <li class="tag active-tag">Vie locale</li>
-            <li class="tag">Culture</li>
-            <li class="tag">Économie</li>
-            <li class="tag">Éducation</li>
-            <li class="tag">Transports</li>
-            <li class="tag">Sport</li>
-          </ul>
-        </form>
-      </section>
+            <div class="articles-order">
+              <label for="articles-order">trier</label>
+              <select name="articles-order" id="articles-order">
+                <option value="1">Les plus récents</option>
+                <option value="2">Les plus lus</option>
+                <option value="3">temps de lecture (court)</option>
+              </select>
+            </div>
+            <ul class="articles-search-themes">
+              <li class="tag active-tag">Vie locale</li>
+              <li class="tag">Culture</li>
+              <li class="tag">Économie</li>
+              <li class="tag">Éducation</li>
+              <li class="tag">Transports</li>
+              <li class="tag">Sport</li>
+            </ul>
+          </form>
+        </section>
 
-      <section id="articles-articleslist">
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Vie locale</div>
+        <section id="articles-articleslist">
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Vie locale</div>
+              </div>
+              <h2>
+                budget participatif : les 5 projets retenus et le calendrier
+              </h2>
+              <p>
+                récapitulatif des projets financés en 2026 et des prochaines
+                étapes.
+              </p>
+              <div class="article-subtitle">
+                <p>25 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>
-              budget participatif : les 5 projets retenus et le calendrier
-            </h2>
-            <p>
-              récapitulatif des projets financés en 2026 et des prochaines
-              étapes.
-            </p>
-            <div class="article-subtitle">
-              <p>25 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Culture</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Culture</div>
+              </div>
+              <h2>
+                Exposition : Une sélection d'oeuvres locals à découvrir en
+                famille
+              </h2>
+              <p>
+                Un parcours accessible et chaleureux, avec des temps de
+                médiation et une visite courte.
+              </p>
+              <div class="article-subtitle">
+                <p>22 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>
-              Exposition : Une sélection d'oeuvres locals à découvrir en famille
-            </h2>
-            <p>
-              Un parcours accessible et chaleureux, avec des temps de médiation
-              et une visite courte.
-            </p>
-            <div class="article-subtitle">
-              <p>22 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Économie</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Économie</div>
+              </div>
+              <h2>
+                Commerces : les horaires spéciaux des fêtes et les services de
+                proximité
+              </h2>
+              <p>
+                Ouvertures, fermetures, permanances : un récapitulatif clair
+                pour organiser vos courses
+              </p>
+              <div class="article-subtitle">
+                <p>23 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>
-              Commerces : les horaires spéciaux des fêtes et les services de
-              proximité
-            </h2>
-            <p>
-              Ouvertures, fermetures, permanances : un récapitulatif clair pour
-              organiser vos courses
-            </p>
-            <div class="article-subtitle">
-              <p>23 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Éducation</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Éducation</div>
+              </div>
+              <h2>Écoles : informations pratiques pour la reprise</h2>
+              <p>
+                Transport scolaire, cantine, inscriptions : ce qu'il faut
+                retenir.
+              </p>
+              <div class="article-subtitle">
+                <p>23 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>Écoles : informations pratiques pour la reprise</h2>
-            <p>
-              Transport scolaire, cantine, inscriptions : ce qu'il faut retenir.
-            </p>
-            <div class="article-subtitle">
-              <p>23 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Transports</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Transports</div>
+              </div>
+              <h2>
+                Circulation : plan de stationnement et conseils pour éviter les
+                bouchons
+              </h2>
+              <p>
+                Les rues à privilégier, les zones à éviter, et des alternatives
+                simples pour se déplacer.
+              </p>
+              <div class="article-subtitle">
+                <p>21 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>
-              Circulation : plan de stationnement et conseils pour éviter les
-              bouchons
-            </h2>
-            <p>
-              Les rues à privilégier, les zones à éviter, et des alternatives
-              simples pour se déplacer.
-            </p>
-            <div class="article-subtitle">
-              <p>21 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Sport</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Sport</div>
+              </div>
+              <h2>Ateliers forme: inscriptions ouvertes pour janvier</h2>
+              <p>
+                Un programme progressif, accessible et convivial pour reprendre
+                en douceur.
+              </p>
+              <div class="article-subtitle">
+                <p>20 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>Ateliers forme: inscriptions ouvertes pour janvier</h2>
-            <p>
-              Un programme progressif, accessible et convivial pour reprendre en
-              douceur.
-            </p>
-            <div class="article-subtitle">
-              <p>20 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Vie sociale</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Vie sociale</div>
+              </div>
+              <h2>Solidarité : besoins prioritaires et points de collecte.</h2>
+              <p>
+                Comment aider efficacement, où déposer et quelles priorités
+                cette semaine.
+              </p>
+              <div class="article-subtitle">
+                <p>22 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>Solidarité : besoins prioritaires et points de collecte.</h2>
-            <p>
-              Comment aider efficacement, où déposer et quelles priorités cette
-              semaine.
-            </p>
-            <div class="article-subtitle">
-              <p>22 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Culture</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Culture</div>
+              </div>
+              <h2>Lecture publique : une soirée contes pour tous</h2>
+              <p>
+                Ambiance chaleureuse et sélection d'histoires locales et
+                contemporaines.
+              </p>
+              <div class="article-subtitle">
+                <p>19 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>Lecture publique : une soirée contes pour tous</h2>
-            <p>
-              Ambiance chaleureuse et sélection d'histoires locales et
-              contemporaines.
-            </p>
-            <div class="article-subtitle">
-              <p>19 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="card">
-          <img src="img/placeholder-16x9.svg" alt="Illustration de l'article" />
-          <div class="card-content">
-            <div class="tags">
-              <div class="tag active-tag">Économie</div>
+          <article class="card">
+            <img
+              src="img/placeholder-16x9.svg"
+              alt="Illustration de l'article"
+            />
+            <div class="card-content">
+              <div class="tags">
+                <div class="tag active-tag">Économie</div>
+              </div>
+              <h2>Marché : Producteurs, horaires et idées de panier</h2>
+              <p>
+                Produits de saison, idées recettes et bon plans pour consommer
+                local.
+              </p>
+              <div class="article-subtitle">
+                <p>18 décembre 2025</p>
+                <p>&FilledVerySmallSquare;</p>
+                <p>Lecture : 3-5 min</p>
+              </div>
             </div>
-            <h2>Marché : Producteurs, horaires et idées de panier</h2>
-            <p>
-              Produits de saison, idées recettes et bon plans pour consommer
-              local.
-            </p>
-            <div class="article-subtitle">
-              <p>18 décembre 2025</p>
-              <p>&FilledVerySmallSquare;</p>
-              <p>Lecture : 3-5 min</p>
-            </div>
-          </div>
-        </article>
-        <div class="articles-pagination">
+          </article>
+        </section>
+
+        <nav class="articles-pagination">
           <button class="button secondary">Préc.</button>
           <button class="button secondary active">1</button>
           <button class="button secondary">2</button>
           <button class="button secondary">3</button>
           <button class="button secondary">Suiv.</button>
+        </nav>
+        <div id="articles-aside">
+          <section id="top-readings" class="card-gray">
+            <h2>Top lectures</h2>
+            <article class="card-gray">
+              <p class="title">Stationnement : Ce qui change en 2026</p>
+              <p>19/12</p>
+            </article>
+            <article class="card-gray">
+              <p class="title">Agenda : Les rendez-vous familiaux</p>
+              <p>17/12</p>
+            </article>
+            <article class="card-gray">
+              <p class="title">Commerces : Services de proximité</p>
+              <p>14/12</p>
+            </article>
+          </section>
+
+          <section id="articles-newsletter" class="card-gray">
+            <h2>Newsletter</h2>
+            <p>Recevez une sélection d'infos utiles chaque semaine</p>
+            <a href="#" class="button">Je m'inscrit</a>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer-content">
