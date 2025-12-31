@@ -80,6 +80,7 @@ GESTION DUI DARK MODE
     --text-article-color: #b3b3b3;
     --tag-text-color: #728cbd;
     --tag-outline: #444983;
+    --tag-outline-secondary: #213750;
 
     --tag-primary-bg-color: #303656;
     --tag-secondary-bg-color: #1f2033;
@@ -92,7 +93,6 @@ GESTION DUI DARK MODE
     color: var(--title-text-color);
   }
 }
-
 
 /* =================================
   SELECTEURS COMMUNS
@@ -119,7 +119,6 @@ GESTION DUI DARK MODE
   pointer-events: none;
 }
 
-
 main {
   margin: 100px 20px;
   /* flex-grow: 1; */
@@ -132,7 +131,9 @@ select:focus-visible {
   box-shadow: 0 0 2px 2px var(--inputs-focus-color);
 }
 
-button, input[type="checkbox"], select {
+button,
+input[type="checkbox"],
+select {
   cursor: pointer;
 }
 
