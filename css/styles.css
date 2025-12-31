@@ -7,8 +7,12 @@
 
 :root {
   font-size: 15px;
-  font-family: inter;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+
+  /* =================================
+  VARIABLES CSS
+  ================================= */
 
   --body-bg-color: #f6f7fb;
   --header-bg-color: #f9f9fb;
@@ -45,6 +49,9 @@
   --quote-border-color: #79a1e7;
 }
 
+/* =================================
+GESTION DUI DARK MODE
+================================= */
 @media (prefers-color-scheme: dark) {
   :root {
     --body-bg-color: #1a1c2b;
@@ -81,6 +88,15 @@
   ul li::marker {
     color: var(--title-text-color);
   }
+}
+
+/* =================================
+  SELECTEURS COMMUNS
+================================= */
+
+main {
+  margin: 100px 20px;
+  flex-grow: 1;
 }
 
 h1,
@@ -147,10 +163,14 @@ body {
   background-color: var(--body-bg-color);
 }
 
-main {
+/* main {
   margin: 20px;
   flex-grow: 1;
-}
+} */
+
+/* =================================
+  CLASSES COMMUNES
+================================= */
 
 .flex {
   display: flex;
@@ -176,6 +196,14 @@ main {
   align-items: start;
 }
 
+.article-subtitle {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -194,13 +222,13 @@ main {
     font-size: 1.3rem;
     margin-bottom: 15px;
   }
-
+  /* 
   .article-subtitle {
     display: flex;
     gap: 10px;
     font-size: 0.8rem;
     margin: 10px 0px;
-  }
+  } */
 
   .card-content {
     padding: 15px;
@@ -272,11 +300,11 @@ main {
       color: var(--title-text-color);
     }
   }
-}
 
-.header-actions {
-  display: flex;
-  gap: 10px;
+  .header-actions {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 #btn-propose {
@@ -286,13 +314,17 @@ main {
   }
 }
 
+/* =================================
+  GESTION DU MENU PRINCIPAL
+================================= */
+
 .menu-nav {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   ul {
     display: flex;
@@ -308,6 +340,11 @@ main {
   }
 }
 
+#menu-btn {
+  display: block;
+  cursor: pointer;
+}
+
 #btn-close-menu-nav {
   margin-bottom: 20px;
   label {
@@ -315,21 +352,25 @@ main {
     outline: none;
     border: none;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
+    font-weight: 200;
   }
 }
 
 #menu-btn-switch {
   &:checked ~ .menu-nav {
     display: block;
+    .tag {
+      border: none;
+      background-color: transparent;
+    }
   }
 }
 
-main {
-  margin: 100px 20px;
-}
-
+/* =================================
+  FOOTER
+================================= */
 .page-footer {
   background-color: var(--footer-bg-color);
   color: var(--text-color);
@@ -370,20 +411,19 @@ main {
 }
 
 /* =================================
-SECTION : STYLE POUR TABLETTES
+SECTION : STYLES COMMUNS POUR TABLETTES
 ================================= */
 @media (min-width: 768px) {
   .page-footer-content {
     grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
   }
   .card-wide {
     flex-direction: row;
     .card-content {
       width: 70%;
     }
-    .article-subtitle {
-      flex-wrap: wrap;
-    }
+
     .article-buttons {
       flex-wrap: wrap;
     }
@@ -391,7 +431,7 @@ SECTION : STYLE POUR TABLETTES
 }
 
 /* =================================
-SECTION : STYLES POUR DESKTOP
+SECTION : STYLES COMMUNS POUR DESKTOP
 ================================= */
 @media (min-width: 1024px) {
   :root {
@@ -404,7 +444,7 @@ SECTION : STYLES POUR DESKTOP
   .page-footer-content,
   .footer-copyright,
   main {
-    padding: 15px calc(20% - 50px);
+    padding: 15px calc((100vw - 1000px) / 2);
   }
 
   #btn-close-menu-nav {
@@ -452,7 +492,7 @@ SECTION : STYLES POUR DESKTOP
 SECTION : Page accueil
 ================================= */
 
-#main-accueil {
+#page-main-accueil {
   display: grid;
   grid-template-areas:
     "main"
@@ -460,7 +500,8 @@ SECTION : Page accueil
     "last"
     "aside";
   gap: 10px;
-  #main-article {
+
+  .main-article {
     grid-area: main;
     .card-content {
       justify-content: space-between;
@@ -470,7 +511,7 @@ SECTION : Page accueil
     }
   }
 
-  #breaking-news {
+  .breaking-news {
     grid-area: breaking;
     padding: 15px 0 0 0;
     display: grid;
@@ -484,7 +525,7 @@ SECTION : Page accueil
     }
   }
 
-  #last-news {
+  .last-news {
     grid-area: last;
     display: flex;
     flex-direction: column;
@@ -499,11 +540,10 @@ SECTION : Page accueil
       align-items: center;
     }
     .card-gray {
-      background-color: var(--aside-bg-color);
       padding: 10px;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: top;
       .title {
         font-size: 0.9rem;
         font-weight: bold;
@@ -531,7 +571,7 @@ SECTION : Page accueil
   }
 
   @media (min-width: 768px) {
-    #breaking-news {
+    .breaking-news {
       display: grid;
       grid-template-columns: 1fr 1fr;
       .breaking-news-headings {
@@ -541,17 +581,25 @@ SECTION : Page accueil
   }
 
   @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr) 250px;
     grid-template-areas:
       "main main main main"
       "breaking breaking breaking aside"
       "last last last aside";
-    gap: 10px;
+    gap: 15px;
     margin: 100px auto;
-    #breaking-news {
+    .breaking-news {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       .breaking-news-headings {
         grid-column: 1 / -1;
+      }
+    }
+
+    .aside {
+      gap: 15px;
+      .card-gray {
+        gap: 15px;
       }
     }
   }
