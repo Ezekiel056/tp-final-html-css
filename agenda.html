@@ -36,7 +36,7 @@
           <span>Proposer une info</span>
         </a>
         <label for="menu-btn-switch">
-          <div class="button secondary" id="menu-btn">Menu</div>
+          <span class="button secondary" id="menu-btn">Menu</span>
         </label>
       </div>
     </header>
@@ -49,9 +49,9 @@
         JavaScript)
       </p>
 
-      <form action="" class="card">
+      <form class="card">
         <div class="inputs">
-          <div aria-label="sélectionner la période de recherche">
+          <div role="form" aria-label="sélectionner la période de recherche">
             <label for="period">Période</label>
             <select name="period" id="period">
               <option value="1">Cette semaine</option>
@@ -60,7 +60,7 @@
             </select>
           </div>
 
-          <div aria-label="Sélectionner le type d'événement">
+          <div role="combobox" aria-label="Sélectionner le type d'événement">
             <label for="event-type">Type d'événement</label>
             <select name="event-type" id="event-type">
               <option value="0">Tous</option>

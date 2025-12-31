@@ -18,14 +18,14 @@
         <img src="/img/logo.svg" alt="Logo du site" />
         <p>CityPulse</p>
       </a>
-      <input type="checkbox" hidden aria-hidden="true" id="menu-btn-switch" />
+      <input type="checkbox" hidden id="menu-btn-switch" />
       <nav class="menu-nav">
         <ul>
           <li id="btn-close-menu-nav">
             <label for="menu-btn-switch">x</label>
           </li>
           <li><a href="/accueil.html">Accueil</a></li>
-          <li><a href="/articles.html" class="tag active-tag">Articles</a></li>
+          <li><a href="/articles.html" class="tag">Articles</a></li>
           <li><a href="/agenda.html">Agenda</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -36,7 +36,7 @@
           <span>Proposer une info</span>
         </a>
         <label for="menu-btn-switch">
-          <div class="button secondary" id="menu-btn">Menu</div>
+          <span class="button secondary" id="menu-btn">Menu</span>
         </label>
       </div>
     </header>
@@ -59,7 +59,7 @@
         </div>
 
         <h1>
-          budget participatif : 5 projets concerts retenus pour améliorer le
+          Budget participatif : 5 projets concrets retenus pour améliorer le
           quotidien
         </h1>
 
@@ -212,37 +212,36 @@
 
       <aside class="share card-gray" aria-label="Partager l'article">
         <p class="title">Partager:</p>
-        <a href="#" class="tag">Email</a>
-        <a href="#" class="tag">Réseau</a>
-        <a href="#" class="tag">Lien</a>
+        <a href="#" class="button secondary">Email</a>
+        <a href="#" class="button secondary">Réseau</a>
+        <a href="#" class="button secondary">Lien</a>
         <p>Boutons non fonctionnels (présentation uniquement).</p>
       </aside>
 
       <!-- Informations sur l'article en cours -->
       <aside class="article-infos">
-        <section class="resume card-gray">
+        <article class="resume card-gray">
           <h2>Resumé</h2>
           <p>
             5 Projets retenus, mise en œuvre par lots en 2026, priorité à
             l'utilité et à l'accessibilité.
           </p>
-        </section>
+        </article>
 
-        <section class="author card-gray">
+        <article class="author card-gray">
           <h2>Auteur</h2>
           <p><strong>Rédaction CityPulse</strong></p>
           <p>
-            collectif, éditorial. Pour proposer un sujet : formulaire de
-            contact.
+            collectif éditorial. Pour proposer un sujet : formulaire de contact.
           </p>
-          <a href="#" class="button">Proposer une info</a>
-        </section>
+          <a href="/contact.html" class="button">Proposer une info</a>
+        </article>
 
-        <section class="newsletter card-gray">
+        <article class="newsletter card-gray">
           <h2>Newsletter</h2>
           <p>Une sélection hebdo des infos utiles et de l'agenda</p>
           <a href="#" class="button secondary">Je m'inscris</a>
-        </section>
+        </article>
       </aside>
     </main>
     <footer class="page-footer">
@@ -266,8 +265,8 @@
         <nav>
           <p class="footer-title">Rédaction</p>
           <ul>
-            <li><a href="#">Proposer une info</a></li>
-            <li><a href="#">Signaler une erreur</a></li>
+            <li><a href="/contact.html">Proposer une info</a></li>
+            <li><a href="/contact.html">Signaler une erreur</a></li>
             <li><a href="#">Charte de publication</a></li>
           </ul>
         </nav>

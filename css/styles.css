@@ -799,7 +799,7 @@ SECTION : Page article
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 15px;
+    padding: 25px 15px;
     p {
       color: var(--text-article-color);
     }
@@ -836,7 +836,7 @@ SECTION : Page article
       justify-content: space-between;
       margin-bottom: 10px;
 
-      P.title {
+      p.title {
         font-weight: bold;
         color: var(--title-text-color);
         font-size: 0.9rem;
@@ -856,9 +856,6 @@ SECTION : Page article
     }
     & p:last-child {
       font-size: 0.9rem;
-    }
-    .tag {
-      font-weight: bold;
     }
   }
 
@@ -910,6 +907,12 @@ SECTION : Page article
       article {
         padding: 10px;
       }
+    }
+
+    .article-infos {
+      article {
+        padding: 20px;
+      } 
     }
   }
 }
