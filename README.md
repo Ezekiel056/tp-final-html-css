@@ -1,6 +1,6 @@
 # tp-final-html-css
 
-##Etat d'avancement actuel :
+## Etat d'avancement actuel :
 
 - Projet terminé :
   - Toutes les pages ont été codées. (HTML + CSS)
