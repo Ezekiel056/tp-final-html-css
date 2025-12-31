@@ -31,12 +31,12 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="#" class="button" id="btn-propose">
+        <a href="/contact.html" class="button" id="btn-propose">
           <span aria-hidden="true">Proposer</span>
           <span>Proposer une info</span>
         </a>
         <label for="menu-btn-switch">
-          <div class="button secondary" id="menu-btn">Menu</div>
+          <span class="button secondary" id="menu-btn">Menu</span>
         </label>
       </div>
     </header>
@@ -49,21 +49,21 @@
         signaler ? Envoyez-nous un message. Les champs marqués "obligatoires"
         doivent être renseignés.
       </p>
-      <form action="" class="card">
+      <form class="card">
         <label for="name">Nom (facultatif)</label>
         <input type="text" id="name" name="name" />
         <p>Indiquez le nom que nous pouvons citer si vous le souhaitez</p>
 
-        <label for="email">Email</label>
+        <label for="email">Email (oligatoire)</label>
         <input type="email" name="email" id="email" required />
         <p>Nous l'utilisons uniquement pour vous répondre.</p>
         <label for="message-type">Type de message (obligatoire)</label>
         <select name="message-type" id="message-type" required>
-          <option value="0">Choisir...</option>
-          <option value="1">Proposer un article</option>
-          <option value="2">Proposer un évèvement</option>
-          <option value="3">Signler une erreur</option>
-          <option value="4">Autre</option>
+          <option value="">Choisir...</option>
+          <option value="2">Proposer un article</option>
+          <option value="3">Proposer un évèvement</option>
+          <option value="4">Signler une erreur</option>
+          <option value="5">Autre</option>
         </select>
 
         <label for="message-text">Message (obligatoire)</label>
@@ -97,9 +97,11 @@
         <section class="before-send card-gray">
           <h2>Avant d'envoyer</h2>
           <ul>
-            <li>Donnez une date et un lieu précis</li>
-            <li>Ajouter un contact si nécéssaire</li>
-            <li>Indiquez si la publication est urgente</li>
+            <li>Donnez une date et un lieu précis.</li>
+            <li>
+              Ajouter un contact si l'événement nécéssite une confirmation.
+            </li>
+            <li>Indiquez si la publication est urgente.</li>
           </ul>
         </section>
       </aside>
@@ -125,8 +127,8 @@
         <nav>
           <p class="footer-title">Rédaction</p>
           <ul>
-            <li><a href="#">Proposer une info</a></li>
-            <li><a href="#">Signaler une erreur</a></li>
+            <li><a href="/contact.html">Proposer une info</a></li>
+            <li><a href="/contact.html">Signaler une erreur</a></li>
             <li><a href="#">Charte de publication</a></li>
           </ul>
         </nav>

@@ -31,7 +31,7 @@
   --active-pagination-bgc: #e6efff;
 
   --input-bg-color: #fdfdff;
-  --inputs-focus-color: #0e0e622e;
+  --inputs-focus-color: #1145bf8b;
 
   --title-text-color: #000;
   --label-text-color: #464646;
@@ -118,6 +118,11 @@ GESTION DUI DARK MODE
   SELECTEURS COMMUNS
 ================================= */
 
+main {
+  margin: 100px 20px;
+  /* flex-grow: 1; */
+}
+
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
@@ -125,9 +130,8 @@ select:focus-visible {
   box-shadow: 0 0 2px 2px var(--inputs-focus-color);
 }
 
-main {
-  margin: 100px 20px;
-  /* flex-grow: 1; */
+button, input[type="checkbox"], select {
+  cursor: pointer;
 }
 
 h1,
