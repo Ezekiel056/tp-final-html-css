@@ -699,6 +699,9 @@ SECTION : Page articles
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    li {
+      cursor: pointer;
+    }
   }
 
   .articles-articleslist {
