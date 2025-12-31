@@ -1,10 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  line-height: 1.5;
-}
-
 :root {
   font-size: 15px;
   font-family: inter, Helvetica, sans-serif;
@@ -38,6 +31,7 @@
   --active-pagination-bgc: #e6efff;
 
   --input-bg-color: #fdfdff;
+  --inputs-focus-color: #0e0e622e;
 
   --title-text-color: #000;
   --label-text-color: #464646;
@@ -78,6 +72,7 @@ GESTION DUI DARK MODE
     --btn-outline-secondary: #e8e8ea;
 
     --input-bg-color: #161726;
+    --inputs-focus-color: #fcfcfc6a;
 
     --title-text-color: #d5d5d5;
     --text-color: #b5b7c1;
@@ -98,13 +93,41 @@ GESTION DUI DARK MODE
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+*:focus-visible {
+  outline: none;
+  position: relative;
+}
+
+*:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 2px solid blue;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
 /* =================================
   SELECTEURS COMMUNS
 ================================= */
 
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 2px 2px var(--inputs-focus-color);
+}
+
 main {
   margin: 100px 20px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 h1,
@@ -387,6 +410,7 @@ body {
 .page-footer {
   background-color: var(--footer-bg-color);
   color: var(--text-color);
+  margin-bottom: 30px;
 }
 
 .page-footer-content {
@@ -622,26 +646,29 @@ SECTION : Page accueil
 SECTION : Page articles
 ================================= */
 
-#main-articles {
+#page-articles-main {
   display: flex;
   flex-direction: column;
 
   gap: 15px;
-  > p {
-    font-weight: 500;
-  }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
-  #articles-content {
+  .articles-content {
     display: grid;
     gap: 15px;
   }
 
-  #articles-search {
+  .articles-search {
+    p {
+      font-size: 0.9rem;
+    }
     grid-area: "search";
     form {
+      > p {
+        margin-bottom: -10px;
+      }
       display: grid;
       gap: 10px;
       .searchbox {
@@ -667,10 +694,11 @@ SECTION : Page articles
     gap: 10px;
   }
 
-  #articles-articleslist {
+  .articles-articleslist {
     display: grid;
     gap: 15px;
   }
+
   .articles-pagination {
     display: flex;
     gap: 5px;
@@ -680,18 +708,23 @@ SECTION : Page articles
       background-color: var(--active-pagination-bgc);
     } */
   }
-  #articles-aside {
+  .articles-aside {
     display: flex;
     flex-direction: column;
     gap: 15px;
     h2 {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
+
   #top-readings {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    h2 {
+      font-size: 1rem;
+    }
 
     article {
       display: flex;
@@ -709,24 +742,34 @@ SECTION : Page articles
   }
 
   @media (min-width: 768px) {
-    .articles-search-themes {
-      grid-column: span 2;
-    }
-    form {
-      grid-template-columns: 1fr 1fr;
-    }
+    .articles-content {
+      .articles-search-themes {
+        grid-column: span 2;
+      }
 
-    #articles-articleslist {
-      grid-template-columns: 1fr 1fr;
+      form.card-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+      }
+
+      .articles-articleslist {
+        grid-template-columns: 1fr 1fr;
+      }
+      .card-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        > p {
+          align-items: end;
+          flex-grow: 1;
+        }
+      }
     }
   }
 
   @media (min-width: 1024px) {
-    #articles-articleslist {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    #articles-content {
+    .articles-content {
       display: grid;
       gap: 15px;
       grid-template-columns: 3fr 1fr;
@@ -734,22 +777,44 @@ SECTION : Page articles
         "search search"
         "articles aside"
         "pagination .";
+
+      .articles-articleslist {
+        grid-area: articles;
+
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+
+      .card-content {
+        h2 {
+          font-size: 1.2rem;
+        }
+        > p {
+          font-size: 0.9rem;
+        }
+      }
     }
 
-    #articles-search {
+    .articles-search {
       grid-area: search;
     }
 
-    #articles-articleslist {
-      grid-area: articles;
-    }
-
-    #articles-aside {
+    .articles-aside {
       grid-area: aside;
     }
 
     .articles-pagination {
       grid-area: pagination;
+    }
+
+    #top-readings {
+      article {
+        align-items: start;
+        padding: 10px;
+        p {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
@@ -912,7 +977,7 @@ SECTION : Page article
     .article-infos {
       article {
         padding: 20px;
-      } 
+      }
     }
   }
 }

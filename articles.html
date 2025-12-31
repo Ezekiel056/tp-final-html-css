@@ -31,24 +31,24 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="#" class="button" id="btn-propose">
+        <a href="/contact.html" class="button" id="btn-propose">
           <span aria-hidden="true">Proposer</span>
           <span>Proposer une info</span>
         </a>
         <label for="menu-btn-switch">
-          <div class="button secondary" id="menu-btn">Menu</div>
+          <span class="button secondary" id="menu-btn">Menu</span>
         </label>
       </div>
     </header>
-    <main id="main-articles">
+    <main id="page-articles-main">
       <h1>Articles</h1>
       <p>
         Retrouvez-les dernières infos, classées par thématique. les filtres sont
         présentés à titre visuel (TP sans JavaScript)
       </p>
-      <div id="articles-content">
-        <section id="articles-search" class="card">
-          <form action="" class="card-content">
+      <div class="articles-content">
+        <section class="articles-search card">
+          <form class="card-content">
             <div class="searchbox">
               <label for="articles-search">Rechercher</label>
               <input
@@ -56,19 +56,20 @@
                 placeholder="Ex. mobilité, culture, écoles ..."
                 id="articles-search"
               />
-              <p class="">
+              <p>
                 La recherche n'est pas fonctionnelle (présentation uniquement)
               </p>
             </div>
 
             <div class="articles-order">
-              <label for="articles-order">trier</label>
+              <label for="articles-order">Trier</label>
               <select name="articles-order" id="articles-order">
                 <option value="1">Les plus récents</option>
                 <option value="2">Les plus lus</option>
                 <option value="3">temps de lecture (court)</option>
               </select>
             </div>
+            <p>Thematiques:</p>
             <ul class="articles-search-themes">
               <li class="tag active-tag">Vie locale</li>
               <li class="tag">Culture</li>
@@ -80,7 +81,7 @@
           </form>
         </section>
 
-        <section id="articles-articleslist">
+        <section class="articles-articleslist">
           <article class="card">
             <img
               src="img/placeholder-16x9.svg"
@@ -91,7 +92,7 @@
                 <div class="tag active-tag">Vie locale</div>
               </div>
               <h2>
-                budget participatif : les 5 projets retenus et le calendrier
+                Budget participatif : les 5 projets retenus et le calendrier
               </h2>
               <p>
                 récapitulatif des projets financés en 2026 et des prochaines
@@ -115,12 +116,11 @@
                 <div class="tag active-tag">Culture</div>
               </div>
               <h2>
-                Exposition : Une sélection d'oeuvres locals à découvrir en
-                famille
+                Exposition : Un parcours accessible pour petits et grands.
               </h2>
               <p>
-                Un parcours accessible et chaleureux, avec des temps de
-                médiation et une visite courte.
+                Une selection d'oeuvres locales, avec médiation et horaires
+                adaptés.
               </p>
               <div class="article-subtitle">
                 <p>22 décembre 2025</p>
@@ -139,13 +139,10 @@
               <div class="tags">
                 <div class="tag active-tag">Économie</div>
               </div>
-              <h2>
-                Commerces : les horaires spéciaux des fêtes et les services de
-                proximité
-              </h2>
+              <h2>Commerces : horaires spéciaux des fêtes et services</h2>
               <p>
-                Ouvertures, fermetures, permanances : un récapitulatif clair
-                pour organiser vos courses
+                Ouvertures, fermetures et permanances : l'essentiel en coup
+                d'oeil.
               </p>
               <div class="article-subtitle">
                 <p>23 décembre 2025</p>
@@ -186,10 +183,7 @@
               <div class="tags">
                 <div class="tag active-tag">Transports</div>
               </div>
-              <h2>
-                Circulation : plan de stationnement et conseils pour éviter les
-                bouchons
-              </h2>
+              <h2>Circulation : conseils pour éviter les bouchons</h2>
               <p>
                 Les rues à privilégier, les zones à éviter, et des alternatives
                 simples pour se déplacer.
@@ -292,13 +286,13 @@
         </section>
 
         <nav class="articles-pagination">
-          <a href="#" class="button secondary">Préc.</a>
-          <a href="#" class="button secondary active">1</a>
-          <a href="#" class="button secondary">2</a>
-          <a href="#" class="button secondary">3</a>
-          <a href="#" class="button secondary">Suiv.</a>
+          <button class="button secondary">Préc.</button>
+          <button class="button secondary active">1</button>
+          <button class="button secondary">2</button>
+          <button class="button secondary">3</button>
+          <button class="button secondary">Suiv.</button>
         </nav>
-        <div id="articles-aside">
+        <aside class="articles-aside">
           <section id="top-readings" class="card-gray">
             <h2>Top lectures</h2>
             <article class="card-gray">
@@ -315,12 +309,12 @@
             </article>
           </section>
 
-          <section id="articles-newsletter" class="card-gray">
+          <section class="articles-newsletter card-gray">
             <h2>Newsletter</h2>
             <p>Recevez une sélection d'infos utiles chaque semaine</p>
-            <a href="#" class="button">Je m'inscrit</a>
+            <a href="#" class="button">Je m'inscris</a>
           </section>
-        </div>
+        </aside>
       </div>
     </main>
     <footer class="page-footer">
@@ -344,8 +338,8 @@
         <nav>
           <p class="footer-title">Rédaction</p>
           <ul>
-            <li><a href="#">Proposer une info</a></li>
-            <li><a href="#">Signaler une erreur</a></li>
+            <li><a href="/contact.html">Proposer une info</a></li>
+            <li><a href="/contact.html">Signaler une erreur</a></li>
             <li><a href="#">Charte de publication</a></li>
           </ul>
         </nav>
