@@ -7,7 +7,7 @@
 
 :root {
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inter, Helvetica, sans-serif;
   font-weight: 300;
 
   /* =================================
@@ -22,10 +22,16 @@
   --aside-bg-color: #fbfcff;
 
   --outline: #eaeaea;
+
   --btn-primary-bg-color: #1f6fec;
   --btn-primary-color: #fff;
+
   --btn-secondary-bg-color: #fff;
   --btn-secondary-color: #000;
+
+  --btn-secondary-active-border-color: #c4ceda;
+  --btn-secondary-active-text-color: #000;
+
   --btn-outline: #184379;
   --btn-outline-secondary: #e8e8ea;
 
@@ -43,7 +49,8 @@
 
   --tag-primary-bg-color: #e7eeff;
   --tag-secondary-bg-color: #fafbfd;
-  --card-shadow: #36393d33 0px 0px 15px;
+
+  --card-shadow: #36393d29 0px 0px 30px;
 
   --quote-bg-color: #f9faff;
   --quote-border-color: #79a1e7;
@@ -66,6 +73,7 @@ GESTION DUI DARK MODE
     --btn-primary-color: #fff;
     --btn-secondary-bg-color: #1f2231;
     --btn-secondary-color: #000;
+    --btn-secondary-active-border-color: #c4ceda;
     --btn-outline: #184379;
     --btn-outline-secondary: #e8e8ea;
 
@@ -249,7 +257,7 @@ body {
   font-size: 0.9rem;
   background-color: var(--tag-secondary-bg-color);
   border: 1px var(--tag-outline-secondary) solid;
-  padding: 8px 12px;
+  padding: 5px 8px;
   border-radius: 20px;
   color: var(--tag-text-color);
   &.active-tag {
@@ -271,6 +279,11 @@ body {
     background-color: var(--btn-secondary-bg-color);
     color: var(--title-text-color);
     border: 1px var(--btn-outline-secondary) solid;
+    &.active {
+      background-color: var(--active-pagination-bgc);
+      border-color: var(--btn-secondary-active-border-color);
+      color: var(--btn-secondary-active-text-color);
+    }
   }
 }
 
@@ -663,9 +676,9 @@ SECTION : Page articles
     gap: 5px;
     justify-content: center;
     align-items: center;
-    & .active {
+    /* & .active {
       background-color: var(--active-pagination-bgc);
-    }
+    } */
   }
   #articles-aside {
     display: flex;
@@ -993,6 +1006,10 @@ SECTION : CONTACT
   }
 }
 
+/* =================================
+SECTION : AGENDA
+================================= */
+
 #page-agenda-main {
   h1 {
     margin-bottom: 5px;
@@ -1023,10 +1040,15 @@ SECTION : CONTACT
       display: flex;
       flex-direction: column;
       gap: 10px;
-      padding: 15px;
+      padding: 15px 15px 30px;
+
+      div + p {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
 
       h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 0;
       }
       .subtitle {
@@ -1045,9 +1067,12 @@ SECTION : CONTACT
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     h2 {
       font-size: 1rem;
+    }
+    .card-gray {
+      padding: 20px 15px;
     }
   }
 
@@ -1055,10 +1080,10 @@ SECTION : CONTACT
     ul {
       display: flex;
       justify-content: center;
-      gap: 15px;
-      & .active {
+      gap: 10px;
+      /* & .active {
         background-color: var(--active-pagination-bgc);
-      }
+      } */
     }
   }
 
@@ -1067,15 +1092,24 @@ SECTION : CONTACT
       display: grid;
       gap: 20px;
       grid-template-columns: 1fr 1fr;
+      .card {
+        padding: 20px;
+      }
     }
-    .card,
-    .card-gray {
+
+    .card {
       padding: 25px;
     }
     form {
       > div {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
+      }
+    }
+
+    .aside {
+      .card-gray {
+        padding: 20px;
       }
     }
   }
