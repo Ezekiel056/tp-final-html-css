@@ -93,6 +93,11 @@ GESTION DUI DARK MODE
   }
 }
 
+
+/* =================================
+  SELECTEURS COMMUNS
+================================= */
+
 * {
   padding: 0;
   margin: 0;
@@ -114,9 +119,6 @@ GESTION DUI DARK MODE
   pointer-events: none;
 }
 
-/* =================================
-  SELECTEURS COMMUNS
-================================= */
 
 main {
   margin: 100px 20px;
